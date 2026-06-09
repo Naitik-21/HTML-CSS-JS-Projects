@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NarutoDB - Naruto Character Database</title>
+    <meta name="description"
+        content="Explore iconic characters from the Naruto universe. Discover their jutsu, clans, nature types, and more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon"></div>
+                <span class="text-gradient-orange">NARUTO</span><span>DB</span>
+            </a>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#clans">Clans</a>
+                <a href="#characters">Characters</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-badge">
+            <div class="logo-icon" style="width:16px;height:16px;"></div>
+            Ninja Database
+        </div>
+        <h1>
+            <span class="text-gradient-orange">NARUTO</span><br />
+            CHARACTER<br />
+            <span class="text-gradient-blue">DATABASE</span>
+        </h1>
+        <p>Explore iconic characters from the Naruto universe. Discover their jutsu, clans, nature types, and more.</p>
+        <div class="hero-buttons">
+            <a href="#characters" class="btn-primary">⚡ Browse Characters →</a>
+        </div>
+        <div class="stats js-hero-stats"></div>
+    </section>
+    <section class="section js-clans-section" id="clans">
+        <div class="container">
+            <h2 class="section-title">Featured Clans</h2>
+            <div class="search-box">
+                <span class="search-icon">⌕</span>
+                <input type="text" class="search-input js-search-clans" placeholder="Search Clans..." />
+            </div>
+            <div class="clan-grid js-featured-clans-grid"></div>
+            <div class="show-more-wrap">
+                <button class="show-more-btn js-show-prev js-show-prev-clans">
+                    <span>Previous</span>
+                    <span class="arrow">↓</span>
+                </button>
+                <div class="page-number">
+                    <span class="active-page js-clans-active-page">0</span>
+                    <span>/</span>
+                    <span class="total-pages js-clans-totalPages">0</span>
+                </div>
+                <button class="show-more-btn js-show-next js-show-next-clans">
+                    <span>Next</span>
+                    <span class="arrow">↓</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section js-characters-section" id="characters">
+        <div class="container">
+            <h2 class="section-title">All Characters</h2>
+            <div class="search-box">
+                <span class="search-icon">⌕</span>
+                <input type="text" class="search-input js-search-characters" placeholder="Search Characters..." />
+            </div>
+            <div class="char-grid js-all-characters-grid"></div>
+            <div class="show-more-wrap">
+                <button class="show-more-btn js-show-prev js-show-prev-characters">
+                    <span>Previous</span>
+                    <span class="arrow">↓</span>
+                </button>
+                <div class="page-number">
+                    <span class="active-page js-characters-active-page">0</span>
+                    <span>/</span>
+                    <span class="total-pages js-characters-totalPages">0</span>
+                </div>
+                <button class="show-more-btn js-show-next js-show-next-characters">
+                    <span>Next</span>
+                    <span class="arrow">↓</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="js-all-characters-details"></section>
+    <footer class="footer">
+        <p>NarutoDB — Built With HTML, CSS&amp; JavaScript · Powered By Naruto API</p>
+        <p style="margin-top:8px;font-size:0.75rem;color:var(--fg-muted);">
+            Data sourced from the Naruto universe. Fan project.
+        </p>
+    </footer>
+</body>
+
+</html>
